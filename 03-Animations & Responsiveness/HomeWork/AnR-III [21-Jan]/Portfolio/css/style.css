@@ -159,21 +159,21 @@ a{
     border-radius: 5%;
 }
 
-.btn-pink::before {
+.btn-pink::after {
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: #ffffff;
     top: 0px;
     left: 0;
     right: 0;
     bottom: 0px;
     z-index: -1;
-    transform: scaleX(0);
+    transform: scaleY(0);
     transform-origin: left;
     transition: all 0.8s;
 }
 
-.btn-pink:hover::before {
+.btn-pink:hover::after {
     transform: scaleX(1);
 }
 
@@ -185,7 +185,6 @@ a{
 /* right Part */
 .hero-section-right{
     position: relative;
-
 }
 
 .absolute{
@@ -226,7 +225,7 @@ a{
     z-index: 9;
     bottom: -1rem;
     right: 0px;
-    animation: dotsAnimation;
+    animation-name: dotsAnimation;
     animation-duration: 4s;
     animation-iteration-count: infinite;
 }
@@ -667,7 +666,6 @@ a{
     align-items: center;
     justify-content: center;
 }
-
 
 .form{
     display:flex;

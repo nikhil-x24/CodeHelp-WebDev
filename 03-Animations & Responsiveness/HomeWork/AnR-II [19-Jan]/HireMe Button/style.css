@@ -33,7 +33,7 @@
     right: 0;
     bottom: 0;
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin: top;
     transition: all 0.8s;
     z-index: -1;
 }
