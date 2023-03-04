@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 3px solid rgb(8, 245, 59);
+    position: relative;
+}
+
+.outter-box{
+    width: 520px;
+    height: 520px;
+    border: 3px solid black;
+    margin: 0 auto;
+    margin-top: 30%;
+    transform: translateY(-50%);
+    position: relative;
+    border-radius: 50%;
+    animation: orbit 40s linear infinite;
+}
+
+@keyframes orbit{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#outter-img1{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(237, 120, 120);
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    animation: imgDiv 20s linear infinite;
+}
+#outter-img2{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(237, 120, 120);
+    position: absolute;
+    top: -5%;
+    right: 40%;
+    animation: imgDiv 20s linear infinite;
+}
+#outter-img3{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(237, 120, 120);
+    position: absolute;
+    top: 30%;
+    right: 0;
+    animation: imgDiv 20s linear infinite;
+}
+#outter-img4{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(237, 120, 120);
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+    animation: imgDiv 20s linear infinite;
+}
+#outter-img5{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(237, 120, 120);
+    position: absolute;
+    bottom: 5%;
+    left:15%;
+    animation: imgDiv 20s linear infinite;
+}
+#outter-img6{
+    width: 50px;
+    height: 50px;
+    background-color:rgb(237, 120, 120);
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    animation: imgDiv 20s linear infinite;
+}
+
+@keyframes imgDiv{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(-40deg);
+    }
+    40%{
+        transform: rotate(-90deg);
+    }
+    60%{
+        transform: rotate(-180deg);
+    }
+    80%{
+        transform: rotate(-210deg);
+    }
+    100%{
+        transform: rotate(100deg);
+    }
+}
+
+.inner1{
+    width: 400px;
+    height: 400px;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    transform: translateY(-55%);
+    margin-top: 50%;
+    position: relative;
+    border-radius: 50%;
+    background-color: rgb(189, 224, 224);
+}
+
+.inner2{
+    width: 250px;
+    height: 250px;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 19%;
+    left: 19%;
+    border-radius: 50%;
+    background-color: white;
+    animation: imgDivBackword 20s linear infinite ;
+}
+
+@keyframes imgDivBackword{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
